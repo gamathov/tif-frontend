@@ -1,0 +1,24 @@
+
+.contenido {
+    position: relative;
+    z-index: 1; 
+}
+
+.sombreado::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+.react{
+    color:white;
+}
+.conoce{
+    border-color:white; 
+    color:white
+}
+#dotlink{
+    text-decoration:underline;
+    text-decoration-style: dotted;
+}
