@@ -1,4 +1,10 @@
 
+.fondo-gris{
+    background-color:rgba(52,58,65,255);
+}
+#comprarTickets{
+    color:green;
+}
 .contenido {
     position: relative;
     z-index: 1; 
@@ -11,6 +17,9 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); 
 }
+.blanco{
+    color:white;
+}
 .react{
     color:white;
 }
@@ -18,7 +27,22 @@
     border-color:white; 
     color:white
 }
+.boton-verde{
+    background-color:#96c93e;
+    border-color:#96c93e;
+}
 #dotlink{
     text-decoration:underline;
     text-decoration-style: dotted;
+    margin-left:5px
+}
+.borde-blanco{
+    border-color:white;
+}
+.btncomprar{
+   background-color:#29a744
+}
+.footer{
+    background:linear-gradient(to right,#1c3643,#1d5271);
+    width:100%;
 }

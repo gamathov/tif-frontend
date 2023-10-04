@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container-fluid m-0 p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark pe-5" style="background-color:rgba(52,58,65,255)">
+        <nav class="navbar navbar-expand-lg navbar-dark pe-5 fondo-gris">
             <div>
             <a class="navbar-brand  ms-sm-0 ms-lg-5" href="#" >
                 <img src="./imgs/codoacodo.png" height="70" width="90">
@@ -39,17 +39,17 @@
                   </li>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:green">Comprar tickets</a>
+                    <a class="nav-link" href="#" id="comprarTickets">Comprar tickets</a>
                   </li>
                 </ul>
             </div>
         
         </nav>
-        <div class="container-fluid text-end d-flex flex-column-reverse justify-content-center p-0 sombreado"  style="background-image:url(./imgs/ba1.jpg);height: 100vh; width: 70wh; background-position:right;">
+        <div class="container-fluid text-end d-flex flex-column-reverse justify-content-start p-0 sombreado"  style="background-image:url(./imgs/ba1.jpg);height: 100vh; width: 70wh; background-position:right;">
            
-            <div class="container-fluid pb-sm-0 pb-lg-1">
-            <div class="row-cols-auto">
-            <div class="col-sm-12 me-lg-5 me-sm-0 mb-1  pe-sm-0 pe-lg-5 contenido" style="color:white; ">
+            <div class="container-fluid pb-sm-0 pb-lg-1 mb-xl-2 pb-xl-2">
+            <div class="row-cols-auto mb-xl-2 pb-xl-2">
+            <div class="col-sm-12 me-lg-5 me-sm-0 mb-1  pe-sm-0 pe-lg-5 contenido blanco">
                 <h2>Conf Bs As</h2>
                 <div>Bs As llega por primera vez a Argentina. Un evento para compartir con <br>  
                 nuestra comunidad el conocimiento y la experiencia de los expertos que <br>
@@ -58,9 +58,9 @@
                 nivel que tenemos para tí. Te esperamos!</div>
             </div>
             <div class="row justify-content-end me-lg-5 me-sm-2 mb-1  pe-sm-0 pe-lg-0 gap-2 contenido">
-                <button type="button" class="btn btn-outline-dark col-auto " style="border-color:white; color:white" >Quiero ser orador</button> 
+                <button type="button" class="btn btn-outline-dark col-auto blanco borde-blanco">Quiero ser orador</button> 
            
-                <button type="button" class="btn btn-success col-auto ">Comprar entradas</button>
+                <button type="button" class="btn btn-success col-auto btncomprar">Comprar entradas</button>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@
                     <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-0">
                         <img src="./imgs/honolulu.jpg" alt="playa" class="img-fluid">
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" style="background-color:rgba(52,58,65,255);color:white">
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 fondo-gris blanco borde-blanco">
                         <div class="mt-3 ms-3">
                         <h2>Bs As - Octubre</h2>
                         <div>Buenos aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km<sup>2</sup> de superficie).</div>
@@ -122,25 +122,27 @@
 
             </div>        
         </div>
-        <div class="container-fluid justify-content-center align-content-center flex-wrap">
+        <div class="container-fluid justify-content-center align-content-center">
             <div class="row-cols-auto">
                 <h6 class="cols-auto d-flex justify-content-center mt-3" style="font-weight: 400; font-size: small;">CONVIÉRTETE EN UN</h6> 
                 <h2 class="cols-auto d-flex justify-content-center " >ORADOR</h2>
-                <h6 class="cols-auto d-flex justify-content-center mt-3" style="font-weight: 400; font-size:medium;">Anótate como un orador para dar una <p class="d-inline" id="dotlink"> charla ignite</p>. Cuentanos de que quieres hablar!</h6> 
+                <h6 class="cols-auto text-center mx-auto mt-3" style="font-weight: 400; font-size:medium;">Anótate como un orador para dar una <span id="dotlink"> charla ignite</span>. Cuentanos de que quieres hablar!</h6> 
             </div>
-            <div class="d-flex flex-columm flex-wrap justify-content-between" style="width: 60%;">
+        <div class="container-fluid d-flex justify-content-center align-content-center">
+            <div class="d-flex flex-column flex-wrap align-content-center justify-content-between" style="width: 60%;">
                 <div class="col-8 justify-content-between align-content-between" style="width:100%">
-                        <input class="border border-opacity-75 me-2" type="text" placeholder="Nombre" style="width:44%" >
-                        <input class="border border-opacity-75 ms-2" type="text" placeholder="Apellido" style="width: 44%;">
-                        <textarea class="mt-3 border border-opacity-75" placeholder="Sobre qué querés hablar?" rows="3" style="width: 90%; font-size: large;"></textarea>
+                        <input class="border border-opacity-75 rounded" type="text" placeholder="Nombre" style="width:44%" >
+                        <input class="border border-opacity-75 rounded ms-2" type="text" placeholder="Apellido" style="width: 44%;">
+                        <textarea class="mt-3 border border-opacity-75 rounded" placeholder="Sobre qué querés hablar?" rows="3" style="width: 90%; font-size: large;"></textarea>
                 </div>
                 <h6 style="font-weight: 300; font-size: small;">Recuerda incluir un título para tu charla</h6>
             
-               <button type="button" class="btn btn-success col-auto mb-sm-3 " style="background-color:#96c93e;border-color:#96c93e; color:white; width:90%">Enviar</button> 
+               <button type="button" class="btn btn-success col-auto mb-sm-3 pb-sm-3 boton-verde blanco " style="width:90%">Enviar</button> 
             </div> 
         </div>
-        <footer class="d-inline-block flex-wrap align-content-around justify-content-center" style="background:linear-gradient(to right,#1c3643,#1d5271);width:100%;">
-        <ul class="nav-bar d-flex align-items-center justify-content-center flex-column flex-sm-row list-unstyled" style="color:white;">
+        </div>
+        <footer class="d-inline-block flex-wrap align-content-around justify-content-center footer">
+        <ul class="nav-bar d-flex align-items-center justify-content-center flex-column flex-sm-row mt-sm-1 list-unstyled blanco">
             <li class="nav-item mt-2 mx-sm-1 mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-5">Preguntas</br>frecuentes</li>
             <li class="nav-item mt-2 mx-sm-1 mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-5">Contáctanos</li>
             <li class="nav-item mt-2 mx-sm-1 mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-5">Prensa</li>
