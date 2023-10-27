@@ -46,3 +46,16 @@
     background:linear-gradient(to right,#1c3643,#1d5271);
     width:100%;
 }
+.aclaracion{
+    font-weight: 300; 
+    font-size: small;
+}
+.letra-mediana{
+    font-weight: 400; 
+    font-size:medium;
+}
+.celeste{
+    background-color: aqua;
+    color: #1d5271;
+    align-items: flex-start;
+}
