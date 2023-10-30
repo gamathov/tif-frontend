@@ -122,23 +122,23 @@
 
             </div>        
         </div>
-        <div class="container-fluid d-flex justify-content-center">
-        <div class="container-fluid justify-content-center align-content-center">
+        <div class="container-fluid d-flex justify-content-center me-sm-3">
+        <div class="d-flex flex-column col-10 justify-content-center align-content-center">
             <div class="row-cols-auto">
-                <h6 class="cols-auto d-flex justify-content-center mt-3" style="font-weight: 400; font-size: small;">CONVIÉRTETE EN UN</h6> 
+                <h6 class="cols-auto d-flex justify-content-center mt-3 letra-chica">CONVIÉRTETE EN UN</h6> 
                 <h2 class="cols-auto d-flex justify-content-center " >ORADOR</h2>
                 <h6 class="cols-auto text-center mx-auto mt-3 letra-mediana" >Anótate como un orador para dar una <span id="dotlink"> charla ignite</span>. Cuentanos de que quieres hablar!</h6> 
             </div>
-        <div class="container-fluid d-flex justify-content-center align-content-center">
-            <div class="d-flex flex-column flex-wrap align-content-center justify-content-between" style="width: 60%;">
-                <div class="col-8 justify-content-between align-content-between" style="width:100%">
-                        <input class="border border-opacity-75 rounded" type="text" placeholder="Nombre" style="width:44%" >
-                        <input class="border border-opacity-75 rounded ms-2" type="text" placeholder="Apellido" style="width: 44%;">
-                        <textarea class="mt-3 border border-opacity-75 rounded" placeholder="Sobre qué querés hablar?" rows="3" style="width: 90%; font-size: large;"></textarea>
+        <div class="container-fluid d-flex col-sm-12 col-md-10 col-lg-8 justify-content-center align-content-around">
+            <div class="d-flex flex-column col-12 flex-wrap align-content-center justify-content-center">
+                <div class=" flex-column col-12 justify-content-center align-content-center">
+                        <input class="border border-opacity-75 rounded col-5 p-1" type="text" placeholder="Nombre">
+                        <input class="border border-opacity-75 rounded col-5 ms-sm-1 ms-md-2 ms-lg-5 p-1" type="text" placeholder="Apellido">
+                        <textarea class="mt-3 border border-opacity-75 rounded col-10 letra-grande ps-2 pt-1 me-3" placeholder="Sobre qué querés hablar?" rows="3"></textarea>
                 </div>
                 <h6 class="aclaracion">Recuerda incluir un título para tu charla</h6>
             
-               <button type="button" class="btn btn-success col-auto mb-sm-3 pb-sm-3 boton-verde blanco " style="width:90%">Enviar</button> 
+               <button type="button" class="btn btn-success col-auto mb-sm-3 pb-sm-3 me-sm-3 boton-verde blanco">Enviar</button> 
             </div> 
         </div>
         </div>
@@ -168,18 +168,22 @@
             <div class="container-fluid">
                 <div class="row-cols-auto">
                     <h6 class="cols-auto d-flex justify-content-center mt-3" style="font-weight: 400; font-size: small;">VENTA</h6> 
-                    <h2 class="cols-auto d-flex justify-content-center " >VALOR DE TICKET $200</h2>
+                    <h2 class="cols-auto d-flex justify-content-center" id="valor" value="200">VALOR DE TICKET $200</h2>
                 </div>
             </div>
-            <div class="container-fluid col-7 row-gap-2 d-flex flex-wrap justify-content-center">
+            <div class="container-fluid col-sm-12 col-md-10 col-lg-7 row-gap-2 d-flex flex-wrap justify-content-center">
                 <input class="col-5 border border-opacity-75 rounded p-2 m-1" type="text" placeholder="Nombre">                
                 <input class="col-5 border border-opacity-75 rounded p-2 m-1" type="text" placeholder="Apellido">
-                <input class="col-10 border border-opacity-75 rounded p-2" type="text" placeholder="Correo">
+                <input class="col-10 border border-opacity-75 rounded p-2" type="email" placeholder="Correo">
                 <div class="col-5 letra-mediana p-2 m-1">Cantidad</div>
                 <div class="col-5 letra-mediana p-2 m-1">Categoría</div>
-                <input class="col-5 border border-opacity-75 rounded p-2 m-1" type="text" placeholder="cantidad">
-                <select class="col-5 rounded m-1" name="Estudiante" id="estudiante"></select>
-                <button type="button" class="d-flex m-1 btn btn-light col-auto p-2 mt-3 mb-sm-3 col-10 align-content-center celeste">Total a pagar $</button> 
+                <input class="col-5 border border-opacity-75 rounded p-2 m-1" id="cantidad" type="text" placeholder="cantidad">
+                <select class="col-5 rounded m-1" name="categoria" id="categoria">
+                    <option selected value="1" id="op_estudiante">Estudiante</option>
+                    <option value="2" id="op_trainee">Trainee</option>
+                    <option value="3" id="op_junior">Junior</option>
+                </select>
+                <button type="button" class="d-flex m-1 btn btn-light col-auto p-2 mt-3 mb-sm-3 col-10 align-content-center celeste" id="valorTotal">Total a pagar $</button> 
                 <button type="button" class="d-flex m-1 btn btn-success col-auto mb-sm-3 col-5 justify-content-center align-content-center boton-verde blanco">Borrar</button>
                 <button type="button" class="d-flex m-1 btn btn-success col-auto mb-sm-3 col-5 justify-content-center align-content-center boton-verde blanco">Resumen</button>
             </div>
@@ -198,5 +202,6 @@
         </ul>
         </footer>
     </div>
+    <script src="./JS/index.js"></script>
 </body>
 </html>

@@ -52,10 +52,16 @@
 }
 .letra-mediana{
     font-weight: 400; 
-    font-size:medium;
+    font-size:medium;}
+.letra-chica{
+    font-weight: 400; 
+    font-size: small;
 }
+.letra-grande{
+    font-size:1.5em;
+}
+
 .celeste{
     background-color: aqua;
     color: #1d5271;
-    align-items: flex-start;
 }
